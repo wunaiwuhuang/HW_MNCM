@@ -1,0 +1,71 @@
+# 共病部分的信度分析
+# 原始 Cronbach's α: 0.5891397 
+# 标准化 Cronbach's α: 0.5820412
+
+# 营养状况部分的信度分析
+# 原始 Cronbach's α: 0.7813937 
+# 标准化 Cronbach's α: 0.7975068
+
+> KMO(comorbidity_data)         #共病部分 KMO > 0.6 较好,可以进行验证性检验
+Kaiser-Meyer-Olkin factor adequacy
+Call: KMO(r = comorbidity_data)
+Overall MSA =  0.63
+MSA for each item = 
+ dis_1  dis_2  dis_3  dis_4  dis_5  dis_6  dis_7  dis_8  dis_9 
+  0.70   0.71   0.68   0.69   0.71   0.64   0.73   0.66   0.47 
+dis_11 dis_12 dis_13 dis_15 dis_16 dis_17 
+  0.53   0.56   0.53   0.67   0.66   0.53 
+> cortest.bartlett(comorbidity_data)
+R was not square, finding R from data
+$chisq
+[1] 777.2167
+
+$p.value
+[1] 4.012031e-103
+
+$df
+[1] 105
+
+> 
+> KMO(nutrition_data)    		#营养部分 KMO > 0.6 较好,可以进行验证性检验
+Kaiser-Meyer-Olkin factor adequacy
+Call: KMO(r = nutrition_data)
+Overall MSA =  0.8
+MSA for each item = 
+nul_1 nul_2 nul_3 nul_4 nul_5 nul_6 nul_7 
+ 0.86  0.84  0.89  0.91  0.88  0.73  0.72 
+> cortest.bartlett(nutrition_data)
+R was not square, finding R from data
+$chisq
+[1] 889.426
+
+$p.value
+[1] 9.448576e-175
+
+$df
+[1] 21
+
+> print(loadings_df)	#各个问题的好坏
+        Factor Item Standardized_Loading
+1  Comorbidity   C1                0.678
+2  Comorbidity   C2                0.402
+3  Comorbidity   C3                0.417
+4  Comorbidity   C4                0.373
+5  Comorbidity   C5                0.475
+6  Comorbidity   C6                0.319
+7  Comorbidity   C7                0.496
+8  Comorbidity   C8                0.252
+9  Comorbidity   C9                0.052
+10 Comorbidity  C10                0.118
+11 Comorbidity  C11                0.125
+12 Comorbidity  C12                0.021
+13 Comorbidity  C13                0.064
+14 Comorbidity  C14                0.177
+15 Comorbidity  C15                0.010
+16   Nutrition   N1                0.611
+17   Nutrition   N2                0.461
+18   Nutrition   N3                0.457
+19   Nutrition   N4                0.403
+20   Nutrition   N5                0.414
+21   Nutrition   N6                0.892
+22   Nutrition   N7                0.891
