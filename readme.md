@@ -4,23 +4,25 @@
 This project is an academic research project I conducted in Grade 3, systematically investigating the comorbidity and malnutrition status of maintenance hemodialysis (MHD) patients at Tianjin Hospital. Through a questionnaire-based survey and data analysis, I explored the prevalence of comorbidities (e.g., cardiovascular diseases, diabetes) and malnutrition indicators (e.g., BMI, serum albumin levels), culminating in a comprehensive research report.
 
 ## Repository Structure
-├── results/ # Contains all analysis output files
-├── .Rhistory # R command history
-├── 01.data_clean.r # Data cleaning script
-├── 02.description.r # Data description script
-├── 03.dis_statistics.r # Descriptive statistics script
-├── 04.Reliability_and_valibility.r # Reliability and validity analysis
-├── 05.lm_and_glm.r # Linear and generalized linear models
-├── 06.mediation.r # Mediation analysis
-├── 07.dis_all_vs_nul.r # Analysis: all vs null
+```text
+├── results/               # Contains all analysis output files
+├── .Rhistory              # R command history
+├── 01.data_clean.r        # Data cleaning script
+├── 02.description.r       # Data description script
+├── 03.dis_statistics.r    # Descriptive statistics script
+├── 04.Reliability_and_valibility.r  # Reliability and validity analysis
+├── 05.lm_and_glm.r        # Linear and generalized linear models
+├── 06.mediation.r         # Mediation analysis
+├── 07.dis_all_vs_nul.r    # Analysis: all vs null
 ├── 08.dis_certain_vs_nul.r # Analysis: certain vs null
-├── 09.dialysis_vs_nul.r # Analysis: dialysis vs null
-├── anal_data_row.xlsx # Raw analytical data
-├── article.docx # Final research paper
-├── data_clean.rdata # Cleaned dataset
-├── des.docx # Description document
-├── row_data.xlsx # Original raw data
-└── framework.pptx # Project workflow presentation
+├── 09.dialysis_vs_nul.r   # Analysis: dialysis vs null
+├── anal_data_row.xlsx     # Raw analytical data
+├── article.docx           # Final research paper
+├── data_clean.rdata       # Cleaned dataset
+├── des.docx               # Description document
+├── row_data.xlsx         # Original raw data
+└── framework.pptx         # Project workflow presentation
+```
 
 ## Usage Instructions
 
